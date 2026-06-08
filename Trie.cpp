@@ -159,8 +159,9 @@ std::vector<Game*> Trie::autocomplete(std::string prefix, int k) {
     //ou ordem alfabética pela chave de busca do título, em caso de empate em popularidade.
     sortResults(results);
 
+    if (k <= 0) return {};
     // Saída de no máximo 'k' elementos
-    if (results.size() > (size_t)k) {
+    if (results.size() > k) { 
         results.resize(k);
     }
 

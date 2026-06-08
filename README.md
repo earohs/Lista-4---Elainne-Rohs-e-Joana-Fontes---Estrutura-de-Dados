@@ -67,7 +67,7 @@ Repare que na saída aparece o único jogo no database com tal prefixo, mesmo co
 
 Comando: 
 ```
-./app 4 lit
+./app 4 LiT
 ```
 
 Output:
@@ -113,7 +113,7 @@ No results found
 
 Comando: 
 ```
-.\app 0 hol
+.\app -1 hol
 ```
 
 Output:
