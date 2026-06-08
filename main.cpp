@@ -10,14 +10,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    int k;
-    // Verifica se k é inteiro. 
-    try {
-        k = std::stoi(argv[1]);
-    } catch (...) {
-        std::cout << "Usage: ./app k prefix" << std::endl;
-        return 1;
-    }
+    int k = std::stoi(argv[1]);
 
     std::string prefix = argv[2];
 
@@ -37,7 +30,7 @@ int main(int argc, char* argv[]) {
         for (Game* game : results) {
             std::cout << game->getTitle() << " | " 
                       << game->getShortDescription() << " | " 
-                      << game->getPopularity() << std::endl;
+                      << game->getPopularity() << "\n" << std::endl;
         }
     }
 
