@@ -18,7 +18,9 @@ O sistema permite:
 
 A compilação do código é feita pelo seguinte comando:
 
-```g++ main.cpp Game.cpp Trie.cpp GamesDatabase.cpp -o app```
+```
+g++ main.cpp Game.cpp Trie.cpp GamesDatabase.cpp -o app
+```
 
 A implementação desse comando gerará um arquivo ```app.exe```.
 
@@ -26,7 +28,9 @@ A implementação desse comando gerará um arquivo ```app.exe```.
 
 Rode o arquivo executável com o seguinte comando:
 
-```./app k prefixo```
+```
+./app k prefixo
+```
 
 Sendo:
 - ```prefixo```: prefixo do(s) título(s) a ser(em) buscado(s) pelo autocomplete.
@@ -47,7 +51,10 @@ Sendo:
 
 #### Exemplo 1: Sucesso, k > results.size()
 
-Comando: ```./app 3 holl```
+Comando: 
+```
+./app 3 holl
+```
 
 Output:
 ```
@@ -58,7 +65,10 @@ Repare que na saída aparece o único jogo no database com tal prefixo, mesmo co
 
 #### Exemplo 2: Sucesso, k < results.size()
 
-Comando: ```./app 4 lit```
+Comando: 
+```
+./app 4 lit
+```
 
 Output:
 ```
@@ -75,7 +85,10 @@ Foram exibidos 4 resutados, quando na verdade ```results.size() = 11```, neste c
 
 #### Exemplo 3 (argumentos insuficientes)
 
-Comando: ```.\app 15```
+Comando: 
+```
+.\app 15
+```
 
 Output:
 
@@ -85,7 +98,10 @@ Usage: ./app k prefix
 
 #### Exemplo 4 (Sem correspondência)
 
-Comando: ```.\app 10 fgv```
+Comando: 
+```
+.\app 10 fgv
+```
 
 Output:
 
@@ -95,7 +111,10 @@ No results found
 
 #### Exemplo 5 (k <= 0)
 
-Comando: ```.\app 0 hol```
+Comando: 
+```
+.\app 0 hol
+```
 
 Output:
 
