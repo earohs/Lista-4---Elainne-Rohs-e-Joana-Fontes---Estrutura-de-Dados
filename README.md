@@ -34,7 +34,7 @@ Sendo:
 
 ### Organização dos arquivos
 
-- ```check_database.cpp```: (Pode ignorar) Retorna os títulos, desrições e popularidades dos ```n``` primeiros jogos do banco de jogos no ```GamesDatabase.cpp```, usando o comando ```./check_database x```. Trata entradas ```x``` inválidas. 
+- ```check_database.cpp```: (Pode ignorar) Retorna os títulos, desrições e popularidades dos ```n``` primeiros jogos do banco de jogos no ```GamesDatabase.cpp```, usando o comando ```./check_database n```. Trata entradas ```n``` inválidas. 
 - ```Game.cpp```: Implementação da classe ```Game```.
 - ```Game.hpp```: Declaração da classe ```Game```, seus atributos e getters.
 - ```GamesDatabase.cpp```: Banco de jogos no sistema de autocomplete.
