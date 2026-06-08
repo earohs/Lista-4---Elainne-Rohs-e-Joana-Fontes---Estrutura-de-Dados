@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
     try {
         k = std::stoi(argv[1]);
     } catch (...) {
-        std::cout << "Usage: ./app k prefix\n";
+        std::cout << "Usage: ./app k prefix" << std::endl;
         return 1;
     }
 
@@ -32,12 +32,12 @@ int main(int argc, char* argv[]) {
 
     // Exibição dos resultados
     if (results.empty()) {
-        std::cout << "No results found\n";
+        std::cout << "No results found" << std::endl;
     } else {
         for (Game* game : results) {
             std::cout << game->getTitle() << " | " 
                       << game->getShortDescription() << " | " 
-                      << game->getPopularity() << "\n";
+                      << game->getPopularity() << std::endl;
         }
     }
 
