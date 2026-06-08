@@ -121,3 +121,4 @@ Output:
 ```
 No results found
 ```
+Sendo que sabemos que existe pelo menos um jogo que corresponde a esse prefixo.
